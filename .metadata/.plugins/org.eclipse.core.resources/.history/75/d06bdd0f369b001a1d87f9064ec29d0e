@@ -1,0 +1,14 @@
+package com.poi.vo.meeting;
+
+import java.time.LocalDateTime;
+
+public class MeetingVO {
+
+	private Long mtno, room, openMember;
+	
+	private LocalDateTime reservationStartDate, reservationEndDate,realStartDate,realEndDate, regDate,modiDate;
+	
+	
+	
+	
+}

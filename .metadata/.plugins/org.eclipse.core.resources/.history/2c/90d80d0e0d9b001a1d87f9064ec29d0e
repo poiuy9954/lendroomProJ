@@ -1,0 +1,9 @@
+package com.poi.mapper;
+
+import lombok.Data;
+
+public interface RoomMapper extends {
+
+	
+	
+}

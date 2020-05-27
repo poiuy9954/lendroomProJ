@@ -1,0 +1,13 @@
+package com.poi.mapper;
+
+import java.util.List;
+
+import com.poi.vo.RoleVO;
+
+public interface RoleMapper extends CRUDMapper<RoleVO, Long> {
+
+	public List<RoleVO> getList(Long mno);
+	
+	public int insert(RoleVO vo);
+	
+}

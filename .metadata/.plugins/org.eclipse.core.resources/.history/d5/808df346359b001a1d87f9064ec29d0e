@@ -1,0 +1,9 @@
+package com.poi.vo.meeting;
+
+public class MeetingVO {
+
+	private Long mtno, room, openMember;
+	
+	
+	
+}

@@ -1,0 +1,7 @@
+package com.poi.mapper;
+
+import com.poi.vo.meeting.MeetingVO;
+
+public interface MeetingMapper extends CRUDMapper<MeetingVO, Long> {
+
+}

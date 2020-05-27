@@ -1,0 +1,7 @@
+package com.poi.controller;
+
+import com.poi.testparent.TestParent;
+
+public class MemberManagerControllerTest extends TestParent {
+
+}

@@ -1,0 +1,56 @@
+package com.poi.service;
+
+import java.util.Arrays;
+
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.poi.service.member.MemberService;
+import com.poi.testparent.TestParent;
+import com.poi.vo.member.MemberVO;
+import com.poi.vo.member.RoleVO;
+
+import lombok.extern.log4j.Log4j;
+
+@Log4j
+public class MemberServiceTest extends TestParent {
+
+	@Autowired
+	private MemberService memberService;
+	
+	
+	@Test
+	public void memberregister()
+	{
+		MemberVO vo = new MemberVO();
+		vo.setName("킹나방");
+		vo.setEmail("kingnabang11@naver.com");
+		vo.setPassword("1234");
+		vo.setCompany("BitCamp");
+		vo.setDept("100");
+		vo.setRole(long[] {1,2,3});
+		RoleVO vo2 = new RoleVO();
+		Long[] roleList = {vo.getRole()};
+		vo2.setRoleList(Arrays.asList(roleList));
+		memberService.register(vo,vo2);
+	}
+	
+	@Test
+	public void memberInfoRead()
+	{
+		log.info(memberService.memberInfoRead(5L));
+	}
+	@Test
+	public void memberGetList()
+	{
+		memberService.memberListPrint().forEach((a)->log.info(a));
+	}
+	
+	
+	@Test
+	public void beanTest()
+	{
+		log.info(memberService);
+	}
+	
+}

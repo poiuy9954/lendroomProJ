@@ -1,0 +1,11 @@
+package com.poi.mapper;
+
+import com.poi.vo.penalty.penaltyApplyVO;
+
+public interface PenaltyApplyMapper{
+	
+	
+	public int insert(penaltyApplyVO vo);
+	
+	
+}

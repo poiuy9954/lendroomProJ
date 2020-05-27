@@ -1,0 +1,21 @@
+package com.poi.mapper;
+
+import java.util.List;
+
+import com.poi.vo.MemberVO;
+
+public interface MemberMapper {
+
+	public List<MemberVO> getList();
+	
+	
+	
+	//crud
+	public int insert(MemberVO vo);
+	
+	public MemberVO select(Long mno);
+
+	public int update(MemberVO vo);
+	
+	public int delete(Long mno);
+}

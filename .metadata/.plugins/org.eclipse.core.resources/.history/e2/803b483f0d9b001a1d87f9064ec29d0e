@@ -1,0 +1,9 @@
+package com.poi.mapper;
+
+import com.poi.vo.RoomVO;
+
+public interface RoomMapper extends CRUDMapper<RoomVO, Long> {
+
+	public List<RoomVO> getList();
+	
+}

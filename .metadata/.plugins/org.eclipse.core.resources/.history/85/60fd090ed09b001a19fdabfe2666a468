@@ -1,0 +1,7 @@
+package com.poi.vo.meeting;
+
+public interface EntryMemberVO {
+
+	
+	
+}

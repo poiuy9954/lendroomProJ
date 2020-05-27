@@ -1,0 +1,6 @@
+package com.poi.mapper;
+
+@Data
+public interface RoomMapper {
+
+}

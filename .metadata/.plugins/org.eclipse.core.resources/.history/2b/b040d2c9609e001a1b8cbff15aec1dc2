@@ -1,0 +1,48 @@
+package com.poi.controller;
+
+import org.aspectj.weaver.Member;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.poi.service.member.MemberService;
+
+import lombok.extern.log4j.Log4j;
+
+@Controller
+@RequestMapping("/membermanager/*")
+@Log4j
+public class MemberManagerController {
+
+	@Autowired
+	private MemberService memberService;
+	
+	@GetMapping("/memberlist")
+	public void memberList(Model model)
+	{
+		log.info("MemberList Page..................................:");
+		//멤버 리스트 출력 Page
+		//MemberManager - balsamiq refer
+		model.addAttribute("list", memberService.memberListPrint());
+		log.info(model);
+	}
+	
+	@GetMapping("/memberinfo")
+	public void memberinfo(Model model,Long mno)
+	{
+		log.info("MemberInfo Page..........................................");
+		model.addAttribute("info", memberService.memberInfoRead(mno));
+		log.info(model);
+	}
+	
+	@PostMapping("/register")
+	public String memberRegister()
+	{
+		
+	}
+	
+	
+}

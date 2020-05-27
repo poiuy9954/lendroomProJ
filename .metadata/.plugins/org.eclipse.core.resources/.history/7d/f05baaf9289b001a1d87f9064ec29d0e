@@ -1,0 +1,24 @@
+package com.poi.mapper;
+
+import java.util.List;
+
+import com.poi.vo.RoomToolsVO;
+
+public interface RoomToolsMapper {
+
+	/**
+	 * 본 Mapper의 기능은 각 Room의 Tool을 가지고있는 tbl_roomtools 테이블과 연결된다.
+	 * Room에게 종속적인 관계로 맺어져있기 때문에
+	 * CRUD 전부 rno를 기반으로 테이블을 탐색한다.
+	 * 특히 read에 해당하는 getList의 경우 단일의 Room - tool Data를 뽑아낼 필요가 없기 때문에
+	 * List로써만 뽑아낸다.
+	 */
+	
+	public int insert(RoomToolsVO vo);
+	
+	public List<RoomToolsVO> getList(Long rno);
+	
+	public int update(RoomToolsVO vo);
+	
+	public int delete(RoomToolsVO vo);
+}

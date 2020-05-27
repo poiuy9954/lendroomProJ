@@ -1,0 +1,5 @@
+package com.poi.vo.meeting;
+
+public class MeetingVO {
+
+}

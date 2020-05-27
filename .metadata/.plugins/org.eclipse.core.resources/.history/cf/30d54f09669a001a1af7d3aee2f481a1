@@ -1,0 +1,11 @@
+package com.poi.vo;
+
+import java.time.LocalDateTime;
+
+public class MemberVO {
+	
+	private Long mno;
+	private String name, id, password,company,dept,role;
+	private LocalDateTime regdate, modidate;
+	
+}

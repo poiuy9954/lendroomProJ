@@ -1,0 +1,7 @@
+package com.poi.dto;
+
+public class RoleUpdateDTO {
+
+	private Long member_no, role_no, changeRole_no;
+	
+}

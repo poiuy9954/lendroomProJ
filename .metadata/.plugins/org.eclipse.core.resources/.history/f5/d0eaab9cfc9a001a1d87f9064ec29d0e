@@ -1,0 +1,12 @@
+package com.poi.dto;
+
+import com.poi.vo.MemberVO;
+import com.poi.vo.RoleVO;
+
+public class RoleInsertDTO {
+
+	private MemberVO member;
+	private RoleVO role;
+	
+	
+}

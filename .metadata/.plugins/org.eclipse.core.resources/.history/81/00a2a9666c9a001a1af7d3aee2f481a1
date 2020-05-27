@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.poi.mapper.MemberMapper">
+	
+	<select id="select" parameterType="Long" resultType="com.poi.vo.MemberVO">
+		select * from tbl_member where mno = #{mno}
+	</select>
+	<select id="getList" resultType="com.poi.vo.MemberVO">
+		select * from tbl_member;
+	</select>
+	
+	<insert id="insert" parameterType="com.poi.vo.MemberVO">
+		insert into tbl_member (name, email, password, company, dept)
+		values (#{name},#{email},#{password},#{company},#{dept})
+	</insert>
+	<update id="update" parameterType="com.poi.vo.MemberVO">
+		update tbl_member set name=#{name}, email=#{email}, password=#{password}, company=#{company}, dept=#{dept}
+	</update>
+	<delete id="delete">
+		delete from tbl_member where mno = #{mno}
+	</delete>
+	
+	
+</mapper>

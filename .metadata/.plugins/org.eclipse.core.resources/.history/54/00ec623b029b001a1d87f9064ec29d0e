@@ -1,0 +1,19 @@
+package com.poi.dto;
+
+
+import java.util.List;
+
+import com.poi.vo.MemberVO;
+import com.poi.vo.RoleVO;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class RoleInsertDTO {
+
+	private Long member_no;
+	private List<Long> role_no;
+	
+}

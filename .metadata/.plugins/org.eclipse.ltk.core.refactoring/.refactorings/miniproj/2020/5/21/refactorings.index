@@ -1,0 +1,24 @@
+1589955228447	Rename package 'com.poi.parent'
+1589961353971	Rename resource 'Role.xml'
+1589961408385	Rename resource 'Room.xml'
+1590021989737	Rename type 'RoleDTO'
+1590027738668	Rename type 'RoleUpdateDTO'
+1590027747431	Rename type 'RoleUpDElDTO'
+1590031925328	Copy compilation unit
+1590031935651	Rename type 'RoleVO'
+1590031941077	Rename type 'RoleInsertDTO'
+1590032562679	Delete elements
+1590032565617	Delete element
+1590032843802	Rename type 'RoomTools'
+1590033859478	Rename type 'RoomToolsMapper'
+1590045252256	Rename type 'RoomToolJoined'
+1590045310376	Delete element
+1590045636798	Move compilation units
+1590045670900	Rename package 'com.poi.vo.Room'
+1590045710172	Move compilation units
+1590045990268	Rename type 'Meeting'
+1590112302601	Rename resource 'EntryMapper.xml'
+1590113294021	Rename type 'EntryMemberMapper'
+1590116864329	Rename resource 'PaneltyApplyMapper.xml'
+1590117902528	Delete element
+1590117907578	Move compilation unit

@@ -1,0 +1,20 @@
+package com.poi.vo.meeting;
+
+import java.util.List;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+@NoArgsConstructor
+public class EntryMemberVO {
+
+	
+	private Long meeting, member;
+	
+	private List<Long> memberList;
+	
+	public EntryMemberVO(Long meeting, Long[] member){
+		
+	}
+}

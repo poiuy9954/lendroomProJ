@@ -1,0 +1,11 @@
+package com.poi.vo;
+
+import lombok.Data;
+
+@Data
+public class RoleVO {
+
+	private Long mno;, rlno
+	private String roleName;
+	
+}

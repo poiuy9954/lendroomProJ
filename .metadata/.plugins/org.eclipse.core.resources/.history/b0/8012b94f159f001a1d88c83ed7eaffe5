@@ -1,0 +1,21 @@
+package com.poi.service.member;
+
+import java.util.List;
+import java.util.Map;
+
+import com.poi.vo.member.MemberVO;
+import com.poi.vo.member.RoleVO;
+
+public interface MemberService {
+
+	
+	public List<Map<String, String>> memberListPrint();
+	
+	public void memberModify();
+
+	public MemberVO memberInfoRead(Long mno);
+
+
+	void register(MemberVO vo, RoleVO vo2);
+	
+}

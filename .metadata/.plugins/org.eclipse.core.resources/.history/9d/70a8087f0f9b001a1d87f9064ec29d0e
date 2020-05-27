@@ -1,0 +1,45 @@
+package com.poi.mapper;
+
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.poi.testparent.TestParent;
+import com.poi.vo.RoomVO;
+
+import lombok.extern.log4j.Log4j;
+
+@Log4j
+public class RoomMapperTest extends TestParent {
+
+	@Autowired
+	private RoomMapper roomMapper;
+	
+	@Test
+	public void getList()
+	{
+		roomMapper.getList((vo)->log.info(vo));
+	}
+	
+	@Test
+	public void select()
+	{
+		log.info(roomMapper.select(2L));
+	}
+	
+	@Test
+	public void insert()
+	{
+		RoomVO vo = new RoomVO();
+		vo.setName("A1");
+		vo.setPosition("8Ãþ ÁÂÃø");
+		vo.setCompany("bitCamp");
+		log.info(roomMapper.insert(vo));
+	}
+	
+	@Test
+	public void test()
+	{
+		log.info(roomMapper);
+	}
+	
+}

@@ -1,0 +1,19 @@
+package com.poi.mapper;
+
+import java.util.List;
+
+import com.poi.dto.RoleInsertDTO;
+import com.poi.vo.MemberVO;
+import com.poi.vo.RoleVO;
+
+public interface RoleMapper  {
+
+	public List<RoleVO> getList(Long mno);
+	
+	public int insert(RoleInsertDTO dto);
+	
+	public int update(RoleInsertDTO dto);
+	
+	public int delete(Long mno);
+	
+}

@@ -1,0 +1,10 @@
+package com.poi.mapper;
+
+import com.poi.testparent.TestParent;
+
+public class RoomToolsMapper extends TestParent {
+
+	
+	
+	
+}

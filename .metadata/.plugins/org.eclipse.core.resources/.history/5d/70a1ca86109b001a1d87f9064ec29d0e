@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+  <mapper namespace="com.poi.mapper.RoomMapper">
+  	
+  	<insert id="insert" parameterType="com.poi.vo.RoomVO">
+  		insert into tbl_room (name,position,company) 
+		values
+		(#{name},#{position},#{company})
+  	</insert>
+  	<select id="select" parameterType="long" resultType="com.poi.vo.RoomVO">
+		select * from tbl_room where rno = #{number}
+  	</select>
+  	<select id="getList" resultType="com.poi.vo.RoomVO">
+  		select * from tbl_room
+  	</select>
+  	
+  	<update id="update" parameterType="com.poi.vo.RoomVO">
+  		update tbl_room set name = 'B2', position = '7층 우측', company = 'AIACADEMY', modidate=now()
+		where rno = 4
+
+  	</update>
+  	
+  </mapper>

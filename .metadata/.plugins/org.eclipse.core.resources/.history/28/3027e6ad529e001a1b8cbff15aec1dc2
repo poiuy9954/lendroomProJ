@@ -1,0 +1,24 @@
+package com.poi.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.web.WebAppConfiguration;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.context.WebApplicationContext;
+
+import com.poi.testparent.TestParent;
+
+import lombok.extern.log4j.Log4j;
+
+
+@Log4j
+@WebAppConfiguration
+@ContextConfiguration({"file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml",
+						"file:src/main/webapp/WEB-INF/spring/root-context.xml"})
+public class MemberManagerControllerTest{
+
+	@Autowired
+	private WebApplicationContext ctx;
+	private MockMvc mockMVC;
+	
+}

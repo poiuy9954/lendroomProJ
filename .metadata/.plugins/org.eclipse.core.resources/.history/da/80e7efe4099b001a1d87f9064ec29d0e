@@ -1,0 +1,10 @@
+package com.poi.dto;
+
+import lombok.Data;
+
+@Data
+public class RoleUpdateDTO {
+
+	private Long member_no, role_no, changeRole_no;
+	
+}

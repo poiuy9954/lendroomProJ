@@ -1,0 +1,13 @@
+package com.poi.vo;
+
+import java.util.List;
+
+import lombok.Data;
+
+@Data
+public class RoomToolsVO {
+
+	private Long rno, changeTool_no;
+	private List<Long> toolList;
+	
+}

@@ -1,0 +1,11 @@
+package com.poi.mapper;
+
+import java.util.List;
+
+public interface EntryMemberMapper {
+
+	
+	
+	public List<EntryMemberVO> getList();
+	
+}

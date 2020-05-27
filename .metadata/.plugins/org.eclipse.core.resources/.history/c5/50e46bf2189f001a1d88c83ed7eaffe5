@@ -1,0 +1,30 @@
+package com.poi.vo.member;
+
+import java.time.LocalDateTime;
+
+import lombok.Data;
+
+@Data
+public class MemberVO {
+	
+	private Long mno;
+	private Long[] role;
+	private String name, email, password,company,dept;
+	private LocalDateTime regDate, modiDate;
+	
+	
+	/**
+	 * For Member UPDATE
+	 * @param name
+	 * @param email
+	 * @param password
+	 * @param role
+	 */
+	public MemberVO(String name, String email, String password, Long[] role)
+	{
+		this.name = name;
+		this.email = email;
+		this.password = password;
+		this.role = role;
+	}
+}
