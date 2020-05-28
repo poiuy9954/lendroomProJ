@@ -1,10 +1,6 @@
 package com.poi.mapper;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Stack;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,12 +34,12 @@ public class MeetingMapperTest extends TestParent {
 	@Test
 	public void getList() {
 		meetingMapper.getList().forEach((vo) -> log.info(vo));
-		;
+		
 	}
 
 	@Test
 	public void read() {
-		log.info(meetingMapper.select(1L));
+		log.info(meetingMapper.getList(1L));
 	}
 
 	@Test
@@ -51,7 +47,7 @@ public class MeetingMapperTest extends TestParent {
 
 		LocalDateTime reservationStartDate = LocalDateTime.of(2020, 05, 20, 9, 00, 00);
 		MeetingVO vo = new MeetingVO();
-		vo.setTitle("ºÎ¼­ºñ »ç¿ëÃ³ " + reservationStartDate.toLocalDate());
+		vo.setTitle("ï¿½Î¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ã³ " + reservationStartDate.toLocalDate());
 		vo.setOpenMember(1L);
 		vo.setRoom(3L);
 		vo.setReservationStartDate(reservationStartDate);

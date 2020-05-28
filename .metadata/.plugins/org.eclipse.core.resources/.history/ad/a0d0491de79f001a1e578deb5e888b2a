@@ -1,0 +1,49 @@
+package com.poi.service.center;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.poi.mapper.RoomMapper;
+import com.poi.mapper.RoomToolsMapper;
+import com.poi.vo.room.RoomVO;
+
+@Service
+public class CenterServiceImpl implements CenterService {
+
+	@Autowired
+	private RoomMapper roomMapper;
+	@Autowired
+	private RoomToolsMapper roomToolsMapper;
+
+	@Override
+	public List<Map<String, String>> printRoomList() {
+		// TODO Auto-generated method stub
+		return roomMapper.getList();
+	}
+	
+	@Override
+	@Transactional
+	public int deleteRoom(Long rno) {
+		roomToolsMapper.delete(rno);
+		RoomVO vo = new RoomVO();
+		roomMapper.update(new RoomVO().deleteSet(rno));
+		return 0;
+	}
+
+	@Override
+	public int addRoom() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int modifyRoom() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

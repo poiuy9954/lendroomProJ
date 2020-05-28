@@ -4,7 +4,6 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.poi.testparent.TestParent;
-import com.poi.vo.room.RTJoinVO;
 import com.poi.vo.room.RoomToolsVO;
 
 import lombok.extern.log4j.Log4j;
@@ -14,17 +13,12 @@ public class RoomToolsMapperTest extends TestParent {
 
 	@Autowired
 	private RoomToolsMapper roomToolsMapper;
-	@Autowired
-	private RoomMapper roomMapper;
 	
 	
 	@Test
 	public void delete()
 	{
-		Long[] toolList = {};
-		
-		RoomToolsVO vo = new RoomToolsVO(1L,toolList);
-		log.info(roomToolsMapper.delete(vo));
+		log.info(roomToolsMapper.delete(1L));
 	}
 	
 	@Test
@@ -47,8 +41,7 @@ public class RoomToolsMapperTest extends TestParent {
 	public void insert()
 	{
 		Long[] toolList = {1L,2L,3L};
-		RoomToolsVO vo = new RoomToolsVO(3L, toolList);
-		log.info(roomToolsMapper.insert(vo));
+		log.info(roomToolsMapper.insert(new RoomToolsVO().insertSet(11L, toolList)));
 	}
 	
 	@Test
@@ -57,15 +50,6 @@ public class RoomToolsMapperTest extends TestParent {
 		log.info(roomToolsMapper);
 	}
 	
-	@Test
-	public void test2()
-	{
-		Long rno = 1L;
-		RTJoinVO vo = new RTJoinVO();
-		vo.setRoom(roomMapper.select(rno));
-		vo.setTools(roomToolsMapper.getListJoined(rno));
-		log.info(vo);
-	}
 	
 	
 }

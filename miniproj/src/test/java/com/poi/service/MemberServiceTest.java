@@ -1,6 +1,5 @@
 package com.poi.service;
 
-import java.util.Arrays;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.poi.service.member.MemberService;
 import com.poi.testparent.TestParent;
 import com.poi.vo.member.MemberVO;
-import com.poi.vo.member.RoleVO;
 
 import lombok.extern.log4j.Log4j;
 

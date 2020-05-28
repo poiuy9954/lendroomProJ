@@ -11,11 +11,33 @@
 			(#{title}, #{openMember},#{room},#{reservationStartDate},#{reservationEndDate})
 		</insert>
 		
-		<select id="select" parameterType="Long" resultType="com.poi.vo.meeting.MeetingVO">
-			select * from tbl_meeting where mtno = #{mtno}
-		</select>
-		<select id="getList" resultType="com.poi.vo.meeting.MeetingVO">
-			select * from tbl_meeting
+		<select id="getList" resultType="java.util.Map">
+			select 
+			me1.mtno, 
+			me1.title, 
+			m1.name "openMember", 
+			r1.name "room", 
+			em2.name "JoinMember", 
+			me1.reservationStartDate, 
+			me1.reservationEndDate, 
+			me1.realStartDate, 
+			me1.realEndDate, 
+			me1.regDate, 
+			me1.modiDate
+			
+			from tbl_meeting me1
+			join tbl_member m1 
+			on me1.openMember = m1.mno
+			join (select m2.mno,m2.name,meeting_no from tbl_entryMember em1 
+					join tbl_member m2 
+					on em1.member_no = m2.mno) em2
+			on me1.mtno = em2.meeting_no
+			join tbl_room r1
+			on r1.rno = me1.room
+			where mtno > 0
+			<if test="mtno != null">
+				and mtno = #{mtno}
+			</if>
 		</select>
 		
 		<update id="update" parameterType="com.poi.vo.meeting.MeetingVO">

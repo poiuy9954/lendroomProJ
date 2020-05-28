@@ -1,12 +1,10 @@
 package com.poi.mapper;
 
-import java.util.List;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.poi.testparent.TestParent;
-import com.poi.vo.member.MemberVO;
 import com.poi.vo.member.RoleVO;
 
 import lombok.extern.log4j.Log4j;
@@ -16,8 +14,7 @@ public class RoleMapperTest extends TestParent {
 	
 	@Autowired
 	private RoleMapper roleMapper;
-	@Autowired
-	private MemberMapper memberMapper;
+
 	
 	@Test
 	public void test()

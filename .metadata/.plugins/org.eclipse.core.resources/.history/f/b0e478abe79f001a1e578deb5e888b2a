@@ -1,0 +1,18 @@
+package com.poi.service.center;
+
+import java.util.List;
+import java.util.Map;
+
+public interface CenterService {
+	
+	public List<Map<String,String>> printRoomList();
+	
+	public int deleteRoom(Long rno);
+	
+	public int addRoom();
+	
+	public int modifyRoom();
+	
+	
+	
+}

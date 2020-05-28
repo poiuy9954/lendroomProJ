@@ -2,7 +2,6 @@ package com.poi.mapper;
 
 import java.util.List;
 
-import com.poi.vo.member.MemberVO;
 import com.poi.vo.member.RoleVO;
 
 public interface RoleMapper  {

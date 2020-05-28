@@ -1,6 +1,5 @@
 package com.poi.mapper;
 
-import com.poi.vo.member.MemberVO;
 
 public interface CRUDMapper<K,E> {
 		//crud

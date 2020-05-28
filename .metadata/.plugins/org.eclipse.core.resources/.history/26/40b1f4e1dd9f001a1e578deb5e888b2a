@@ -1,0 +1,5 @@
+package com.poi.service.center;
+
+public interface CenterService {
+
+}

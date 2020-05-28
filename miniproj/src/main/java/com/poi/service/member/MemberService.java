@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Map;
 
 import com.poi.vo.member.MemberVO;
-import com.poi.vo.member.RoleVO;
 
 public interface MemberService {
 

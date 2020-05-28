@@ -1,0 +1,19 @@
+package com.poi.service.reservation;
+
+import java.util.*;
+
+import com.poi.vo.meeting.MeetingVO;
+
+public interface ReservationService {
+	
+	public void addReservation(MeetingVO vo);
+	
+	public void deleteReservation();
+	
+	public void modiReservation();
+	
+	public MeetingVO getReservation();
+	
+	public List<Map<String,String>> getResrvationList();
+
+}

@@ -1,7 +1,6 @@
 package com.poi.vo.meeting;
 
 import java.time.LocalDateTime;
-import java.time.ZonedDateTime;
 
 import lombok.Data;
 

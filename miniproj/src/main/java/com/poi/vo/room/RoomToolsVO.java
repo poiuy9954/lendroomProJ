@@ -3,7 +3,6 @@ package com.poi.vo.room;
 import java.util.Arrays;
 import java.util.List;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -18,13 +17,25 @@ public class RoomToolsVO {
 	private Long rno,tool, changeTool_no;
 	private List<Long> toolList;
 	
+//	/**
+//	 * for Insert
+//	 */
+//	public RoomToolsVO(Long rno, Long[] toolList) {
+//		this.rno = rno;
+//		this.toolList = Arrays.asList(toolList);
+//	}
+	
 	/**
-	 * for Insert
-	 * for delete
+	 * For INSERT
+	 * @param rno | Room Number
+	 * @param toolList | toolList Array
+	 * @return this
 	 */
-	public RoomToolsVO(Long rno, Long[] toolList) {
+	public RoomToolsVO insertSet(Long rno, Long[] toolList)
+	{
 		this.rno = rno;
 		this.toolList = Arrays.asList(toolList);
+		return this;
 	}
 	
 }

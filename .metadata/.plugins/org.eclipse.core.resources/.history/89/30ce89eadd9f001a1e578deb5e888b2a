@@ -1,0 +1,10 @@
+package com.poi.service.center;
+
+public interface CenterService {
+	
+	public List<Map<String,String>> printRoomList()
+	{
+		return null;
+	}
+
+}

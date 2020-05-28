@@ -29,12 +29,9 @@
 		and tool = #{tool}
   	</update>
   	
-  	<delete id="delete" parameterType="com.poi.vo.room.RoomToolsVO">
+  	<delete id="delete" parameterType="Long">
   		delete from tbl_roomtools 
   		where room = #{rno} <!-- Null 처리  -->
-  		<foreach collection="toolList" item="i">
-	  		and tool = #{i}
-		</foreach>
   	</delete>
   
   </mapper>

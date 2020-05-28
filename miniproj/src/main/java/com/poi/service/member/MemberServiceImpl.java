@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.poi.mapper.MeetingMapper;
 import com.poi.mapper.MemberMapper;
 import com.poi.mapper.RoleMapper;
 import com.poi.vo.member.MemberVO;

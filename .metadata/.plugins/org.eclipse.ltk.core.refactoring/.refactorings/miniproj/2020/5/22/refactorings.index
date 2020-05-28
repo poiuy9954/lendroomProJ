@@ -1,3 +1,9 @@
 1590386969879	Rename type 'MemberController'
 1590386983494	Rename type 'AdminMemberController'
 1590387121374	Delete element
+1590564306273	Delete element
+1590565410119	Rename package 'com.poi.service.meeting'
+1590568268202	Rename resource 'MeetingMapper.xml'
+1590568290851	Delete element
+1590568434190	Rename resource 'MeetingMember.xml'
+1590569250135	Rename type 'ReservationImpl'

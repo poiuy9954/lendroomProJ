@@ -2,17 +2,16 @@ package com.poi.mapper;
 
 import java.util.List;
 
-import com.poi.vo.room.RTJoinVO;
 import com.poi.vo.room.RoomToolsVO;
 
 public interface RoomToolsMapper {
 
 	/**
-	 * º» MapperÀÇ ±â´ÉÀº °¢ RoomÀÇ ToolÀ» °¡Áö°íÀÖ´Â tbl_roomtools Å×ÀÌºí°ú ¿¬°áµÈ´Ù.
-	 * Room¿¡°Ô Á¾¼ÓÀûÀÎ °ü°è·Î ¸Î¾îÁ®ÀÖ±â ¶§¹®¿¡
-	 * CRUD ÀüºÎ rno¸¦ ±â¹ÝÀ¸·Î Å×ÀÌºíÀ» Å½»öÇÑ´Ù.
-	 * Æ¯È÷ read¿¡ ÇØ´çÇÏ´Â getListÀÇ °æ¿ì ´ÜÀÏÀÇ Room - tool Data¸¦ »Ì¾Æ³¾ ÇÊ¿ä°¡ ¾ø±â ¶§¹®¿¡
-	 * List·Î½á¸¸ °Ë»öÇÑ´Ù.
+	 * ï¿½ï¿½ Mapperï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Roomï¿½ï¿½ Toolï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ tbl_roomtools ï¿½ï¿½ï¿½Ìºï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È´ï¿½.
+	 * Roomï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Î¾ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	 * CRUD ï¿½ï¿½ï¿½ï¿½ rnoï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìºï¿½ï¿½ï¿½ Å½ï¿½ï¿½ï¿½Ñ´ï¿½.
+	 * Æ¯ï¿½ï¿½ readï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ getListï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Room - tool Dataï¿½ï¿½ ï¿½Ì¾Æ³ï¿½ ï¿½Ê¿ä°¡ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	 * Listï¿½Î½á¸¸ ï¿½Ë»ï¿½ï¿½Ñ´ï¿½.
 	 */
 	
 	public int insert(RoomToolsVO vo);
@@ -21,7 +20,7 @@ public interface RoomToolsMapper {
 	
 	public int update(RoomToolsVO vo);
 	
-	public int delete(RoomToolsVO vo);
+	public int delete(Long rno);
 	
 	public List<String> getListJoined(Long rno);
 	

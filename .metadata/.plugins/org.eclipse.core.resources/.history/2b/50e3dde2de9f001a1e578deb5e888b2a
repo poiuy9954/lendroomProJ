@@ -1,0 +1,24 @@
+package com.poi.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.poi.service.center.CenterService;
+import com.poi.testparent.TestParent;
+
+import lombok.extern.log4j.Log4j;
+
+@Log4j
+public class CenterServiceTest extends TestParent{
+
+	
+	
+	@Autowired
+	private CenterService centerService;
+	
+	@Test
+	public void test()
+	{
+		
+	}
+	
+}

@@ -1,7 +1,0 @@
-package com.poi.db;
-
-import com.poi.testparent.TestParent;
-
-public class DBTest extends TestParent{
-
-}

@@ -26,7 +26,7 @@ public class RoomMapperTest extends TestParent {
 		RoomVO vo = new RoomVO();
 		vo.setRno(2L);
 		vo.setName("A2");
-		vo.setPosition("7Ãþ ¿ìÃø");
+		vo.setPosition("7ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 		vo.setCompany("BitCamp");	
 		log.info(roomMapper.update(vo));
 	}
@@ -43,13 +43,11 @@ public class RoomMapperTest extends TestParent {
 
 	@Test
 	public void insert() {
-		for (int i = 1; i < 4; i++) {
 			RoomVO vo = new RoomVO();
-			vo.setName("C"+i);
-			vo.setPosition("6Ãþ ¿ìÃø");
+			vo.setName("A1");
+			vo.setPosition("6ì¸µ ìš°ì¸¡");
 			vo.setCompany("BitCamp");
 			log.info(roomMapper.insert(vo));
-		}
 	}
 
 	@Test
