@@ -47,7 +47,7 @@ public class MeetingMapperTest extends TestParent {
 
 		LocalDateTime reservationStartDate = LocalDateTime.of(2020, 05, 20, 9, 00, 00);
 		MeetingVO vo = new MeetingVO();
-		vo.setTitle("�μ��� ���ó " + reservationStartDate.toLocalDate());
+		vo.setTitle("룸이없는 미팅이있나?" + reservationStartDate.toLocalDate());
 		vo.setOpenMember(1L);
 		vo.setRoom(3L);
 		vo.setReservationStartDate(reservationStartDate);

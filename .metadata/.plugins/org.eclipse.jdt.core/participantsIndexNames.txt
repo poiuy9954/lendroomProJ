@@ -3,3 +3,5 @@ C:\Project0518\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3193300808.
 \miniproj\src\main\java
 C:\Project0518\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4242492851.index
 \miniproj\src\main\java
+C:\Project0518\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2105611972.index
+\testproj\src\main\java

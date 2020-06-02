@@ -21,7 +21,7 @@ public class EntryMemberMapperTest extends TestParent{
 		Long[] memberList = {1L,2L,3L};
 		EntryMemberVO vo = new EntryMemberVO(1L,memberList);
 		
-		log.info(entryMemeberMapper.delete(vo));
+		log.info(entryMemeberMapper.delete(1L));
 	}
 	
 	@Test

@@ -1,5 +1,0 @@
-package com.poi.dto;
-
-public class RoleUpdateDTO {
-
-}

@@ -24,15 +24,17 @@
 		and member_no = #{member}
  	</update> 	
  	
- 	<delete id="delete" parameterType="com.poi.vo.meeting.EntryMemberVO">
- 		delete from tbl_entryMember
- 		where meeting_no = #{meeting}
- 			and member_no in 
- 			(
-		 		<foreach collection="memberList" item="i" separator=",">
-		 			#{i}
-		 		</foreach>
- 			)
+ 	<delete id="delete" parameterType="Long">
+<!--  		delete from tbl_entryMember -->
+<!--  		where meeting_no = #{meeting} -->
+<!--  			and member_no in  -->
+<!--  			( -->
+<!-- 		 		<foreach collection="memberList" item="i" separator=","> -->
+<!-- 		 			#{i} -->
+<!-- 		 		</foreach> -->
+<!--  			) -->
+		delete from tbl_entryMember
+		where meeting_no = #{mtno}
  	</delete>
  	
  </mapper>

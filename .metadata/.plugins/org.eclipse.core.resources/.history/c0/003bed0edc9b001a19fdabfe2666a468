@@ -1,5 +1,0 @@
-package com.poi.service.member;
-
-public interface MemberService {
-
-}

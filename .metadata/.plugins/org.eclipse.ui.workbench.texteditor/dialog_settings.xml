@@ -6,12 +6,15 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="poi.vo.Role"/>
+		<item key="selection" value="bgBtn"/>
 		<list key="findhistory">
+			<item value="bgBtn"/>
+			<item value="`"/>
 			<item value="package com.poi.service.member;"/>
 			<item value="poi.dto.Role"/>
 		</list>
 		<list key="replacehistory">
+			<item value="&apos;"/>
 			<item value="poi.vo.Role"/>
 		</list>
 	</section>

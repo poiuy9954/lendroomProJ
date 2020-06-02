@@ -1,8 +1,0 @@
-package com.poi.vo.meeting;
-
-public class EntryMemberVO {
-
-	
-	private Long meeting, member;
-	
-}

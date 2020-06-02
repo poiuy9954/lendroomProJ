@@ -1,8 +1,0 @@
-package com.poi.vo.penalty;
-
-public class penaltyApplyVO {
-
-	private Long pno,applyPenalty,applyMember,applyMeeting;
-	
-	
-}

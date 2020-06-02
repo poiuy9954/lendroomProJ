@@ -12,6 +12,6 @@ public interface EntryMemberMapper {
 	
 	public int update(EntryMemberVO vo);
 	
-	public int delete(EntryMemberVO vo);
+	public int delete(Long mtno);
 	
 }

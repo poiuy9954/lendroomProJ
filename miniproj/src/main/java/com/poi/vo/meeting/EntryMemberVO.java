@@ -31,7 +31,6 @@ public class EntryMemberVO {
 		this.memberList = Arrays.asList(memberList);
 	}
 	
-	
 	/**
 	 * For Update
 	 * @param meeting
@@ -43,6 +42,14 @@ public class EntryMemberVO {
 		this.meeting = meeting;
 		this.member = targetMember;
 		this.changeMember = changeMember;
+	}
+	
+	public EntryMemberVO setInsert(Long meeting, Long[] memberList){
+		
+		this.meeting = meeting;
+		this.memberList = Arrays.asList(memberList);
+		
+		return this;
 	}
 	
 	

@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.poi.vo.meeting.EntryMemberVO"/>
-<fullyQualifiedTypeName name="lombok.Data"/>
-<fullyQualifiedTypeName name="com.poi.mapper.CRUDMapper"/>
-<fullyQualifiedTypeName name="com.poi.vo.penalty.penaltyApplyVO"/>
-<fullyQualifiedTypeName name="com.poi.mapper.RoleMapper"/>
 <fullyQualifiedTypeName name="com.poi.service.MemberServiceTest"/>
 <fullyQualifiedTypeName name="org.springframework.beans.BeanUtils"/>
 <fullyQualifiedTypeName name="org.apache.commons.beanutils.BeanUtils"/>
@@ -35,7 +30,6 @@
 <fullyQualifiedTypeName name="org.springframework.test.web.servlet.MockMvc"/>
 <fullyQualifiedTypeName name="org.springframework.test.web.servlet.request.MockMvcRequestBuilders"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="java.lang.Long"/>
 <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
 <fullyQualifiedTypeName name="com.poi.vo.member.RoleVO"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
@@ -46,18 +40,24 @@
 <fullyQualifiedTypeName name="com.poi.service.center.CenterService"/>
 <fullyQualifiedTypeName name="com.poi.mapper.RoomMapper"/>
 <fullyQualifiedTypeName name="com.poi.service.center.CenterServiceImpl"/>
-<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
 <fullyQualifiedTypeName name="com.poi.mapper.RoomToolsMapper"/>
 <fullyQualifiedTypeName name="com.poi.vo.room.RoomToolsVO"/>
 <fullyQualifiedTypeName name="com.poi.vo.room.RoomVO"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="com.poi.vo.meeting.MeetingVO"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 <fullyQualifiedTypeName name="com.poi.mapper.MeetingMapper"/>
 <fullyQualifiedTypeName name="lombok.extern.log4j.Log4j"/>
 <fullyQualifiedTypeName name="com.poi.testparent.TestParent"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="com.poi.service.reservation.ReservationImpl"/>
 <fullyQualifiedTypeName name="com.poi.service.reservation.ReservationService"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.poi.mapper.EntryMemberMapper"/>
+<fullyQualifiedTypeName name="com.poi.service.ReservationServiceTest"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.lang.Long"/>
+<fullyQualifiedTypeName name="com.poi.vo.meeting.EntryMemberVO"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+<fullyQualifiedTypeName name="com.poi.vo.meeting.MeetingVO"/>
+<fullyQualifiedTypeName name="java.time.LocalDateTime"/>
 </qualifiedTypeNameHistroy>

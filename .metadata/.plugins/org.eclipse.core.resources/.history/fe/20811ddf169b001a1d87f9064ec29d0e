@@ -1,8 +1,0 @@
-package com.poi.mapper;
-
-public interface RoomToolsMapper {
-
-	
-	public int insert();
-	
-}
